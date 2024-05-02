@@ -1,16 +1,13 @@
-//const express = require('express');
 import express from 'express';
-import indexRoutes from '../routes/index.js';
 const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-
+app.use(express.urlencoded({ extended: false }));
 
 //routes
 app.use(require('../routes/index'));
 
-
-app.listen(4000);
-console.log('Server on port 4000');
+app.listen(4000, () => {
+  console.log('Server on port 4000');
+});
