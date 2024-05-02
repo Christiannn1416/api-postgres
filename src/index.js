@@ -1,4 +1,6 @@
-const express = require('express');
+//const express = require('express');
+import express from 'express';
+import indexRoutes from '../routes/index.js';
 const app = express();
 
 //middlewares

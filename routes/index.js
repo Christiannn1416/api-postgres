@@ -1,5 +1,8 @@
-const {Router} = require('express');
-const router = Router();
+//const {Router} = require('express');
+//const router = Router();
+
+import express from 'express';
+const router = express.Router();
 
 const {getUsers, createUser, getUserById, deleteUser, updateUser } = require('../controllers/index.controllers')
 
